@@ -2,9 +2,5 @@ query GetRegions($searchString: String!) {
   regionList(searchString: $searchString) {
     id
     name
-    region {
-      id
-      name
-        }
-    }
+  }
 }

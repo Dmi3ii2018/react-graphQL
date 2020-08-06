@@ -4,6 +4,8 @@ import { loader } from 'graphql.macro';
 import { Row, Spin } from 'antd';
 import { Header } from './header';
 import { Cards } from './cards';
+import { ButtonsContainer } from './buttons-container';
+import { RadioButtonGroup } from './radio-button-group';
 import 'antd/dist/antd.css';
 
 const query = loader('../GetRegions.graphql');
@@ -28,6 +30,8 @@ function App() {
         onSearchChange={onSearchChange}
         searchQuery={searchQuery}
       />
+      <ButtonsContainer />
+      <RadioButtonGroup />
       <Row gutter={[24, 24]} justify="start">
         {loading ? <Spin /> : null}
         {data ? <Cards data={data} /> : null}

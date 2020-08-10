@@ -4,15 +4,16 @@ import ApolloClient from 'apollo-boost';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import { ApolloProvider } from '@apollo/react-hooks';
+import './index.css';
 
 const client = new ApolloClient({
   uri: 'http://www.alessandravillas.gr/graphiql/',
 });
 
 ReactDOM.render(
-  <ApolloProvider client={client}>
-    <App />
-  </ApolloProvider>,
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>,
   document.getElementById('root'),
 );
 

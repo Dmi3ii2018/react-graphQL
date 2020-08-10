@@ -1,0 +1,144 @@
+.sl-container{
+  width: 379px;
+  margin: 0 auto;
+  box-shadow: rgba(0, 82, 180, 0.1) 0px 10px 50px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sl-container__image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 221px;
+  background-color: aqua;
+  background-image: url("https://villas-dream.com/wp-content/uploads/2017/07/villas-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.special-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sl-container__special {
+  min-width: 70px;
+  background-color: rgb(241, 37, 61);
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.82;
+  padding: 7px 10px;
+  margin: 0px;
+  border-radius: 12px;
+}
+
+.sl-container__location {
+  color: rgb(255, 255, 255);
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(360deg, rgb(7, 7, 7) -24.34%, rgba(52, 52, 52, 0) 100%);
+}
+
+.location {
+  margin-bottom: 0;
+}
+
+.sl-container__hotel-locatione {
+  color: rgb(151, 145, 167);
+}
+
+.characteristic {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.characteristic__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(151, 145, 167);
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.booking {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.booking-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.booking__button {
+  text-align: center;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgb(148, 63, 161);
+  background: transparent;
+  padding: 10px 12px;
+  margin: 0px;
+  transition: all 0.5s ease 0s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(148, 63, 161);
+  border-image: initial;
+  border-radius: 10px;
+}
+
+.booking__button:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background: rgb(119, 37, 132);
+}
+
+.booking-info__price {
+  margin-bottom: 0;
+}
+
+.booking-info__real-price,
+.booking-info__date {
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: rgb(145, 159, 167);
+  font-size: 12px;
+  line-height: 143%;
+  text-align: center;
+  margin-right: 6px;
+  margin-bottom: 0;
+}
+
+.booking-info__real-price {
+  text-decoration: line-through;
+}
+
+.booking-info__discount-price {
+  font-family: Rubik, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 128%;
+  text-align: right;
+  color: rgb(148, 63, 161);
+}
+
+.hor-line {
+  margin: 0 20px;
+}

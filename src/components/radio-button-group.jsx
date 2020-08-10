@@ -16,7 +16,7 @@ const COLORS = {
   green: 'Green'
 }
 
-export const RadioButtonGroup = () => {
+export const RadioButtonGroup = React.memo(() => {
   const [isBackgroundColor, changeColorTarget] = useState(false);
   const [chosenTextColor, changeTextColor] = useState();
   const [chosenBackgroundColor, changeBackgroundColor] = useState();
@@ -28,7 +28,7 @@ export const RadioButtonGroup = () => {
   const onColorTargetChange = (evt) => {
     evt.target.value === 'color' ? changeColorTarget(false) : changeColorTarget(true);
   };
-
+  console.log('I am rendered')
   return (
     <FlexContainer
       alignItems={'center'}
@@ -56,4 +56,4 @@ export const RadioButtonGroup = () => {
       <Input onColorChange={onColorChange}>Choose your own</Input>
     </FlexContainer>
   )
-}
+});

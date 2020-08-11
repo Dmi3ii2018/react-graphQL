@@ -1,6 +1,12 @@
 import React from 'react';
 import * as Slide from './cards.styles';
 import { OfferSlider } from '../slider';
+import styled from 'styled-components';
+
+const IconContainer = styled.span`
+  color:${({color}) => color || 'rgb(148, 63, 161)'};
+  font-size: ${({fontSize}) => fontSize || '28px'};
+`;
 
 export const OfferCards = (props) => {
   const { regionList } = props.data;
@@ -15,12 +21,18 @@ export const OfferCards = (props) => {
           <Slide.ImageContainer key={region.id}>
             <Slide.SpecialContainer>
               <Slide.Special>Идеально для вас</Slide.Special>
-              <i>Icon</i>
+              <IconContainer>
+                <i className="far fa-heart" aria-hidden="true"></i>
+              </IconContainer>
             </Slide.SpecialContainer>
             <Slide.Location>
             <Slide.HotelName>Kerethium & Astarte {region.id}</Slide.HotelName>
               <Slide.HotelLocation>
-                <i>Icon</i>
+                <IconContainer
+                  color={'rgb(215, 214, 224)'}
+                  fontSize={'16px'}>
+                  <i className="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </IconContainer>
                 <span> {region.name}</span>
               </Slide.HotelLocation>
             </Slide.Location>

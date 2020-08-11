@@ -4,6 +4,7 @@ import { loader } from 'graphql.macro';
 import { Spin } from 'antd';
 import { Header } from './header';
 import { OfferCards } from './Cards/cards';
+import { Carousel } from './carousel';
 import 'antd/dist/antd.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -31,6 +32,8 @@ function App() {
       <div>
         {loading ? <Spin /> : null}
         {data ? <OfferCards data={data} /> : null}
+        <hr />
+        {data ? <Carousel data={data} /> : null}
       </div>
     </>
   );

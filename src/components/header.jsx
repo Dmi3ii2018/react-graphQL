@@ -6,7 +6,7 @@ export const Header = (props) => {
 
   return (
     <Col style={{ paddingBottom: '20px', textAlign: 'center' }}>
-      <h1>React+Apollo+Antd</h1>
+      <h1>React+SC+Antd</h1>
       <input type="text" value={searchQuery} onChange={onSearchChange} />
     </Col>
   );

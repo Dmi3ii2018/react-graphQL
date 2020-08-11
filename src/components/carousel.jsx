@@ -5,9 +5,8 @@ import { OfferCards } from './Cards/cards';
 
 export const Carousel = (props) => {
   const { regionList } = props.data;
-
-  if (!regionList) return null;
-
+  console.log(Boolean(regionList));
+  if (!regionList || regionList.length === 0) return null;
   const settings = {
     infinite: true,
     speed: 500,

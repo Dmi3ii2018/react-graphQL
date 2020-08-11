@@ -11,7 +11,7 @@ const IconContainer = styled.span`
 export const OfferCards = (props) => {
   const { regionList } = props.data;
 
-  if (!regionList) return null;
+  if (!regionList || regionList.length === 0) return null;
 
   return (
     <Slide.SliderContainer>
